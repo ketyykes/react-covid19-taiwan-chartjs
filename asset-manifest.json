@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.2faaa578.css",
-    "main.js": "/static/js/main.e9399416.js",
-    "static/media/image.png": "/static/media/image.9e5d4fc7428c24bbc17d.png",
-    "index.html": "/index.html",
-    "main.2faaa578.css.map": "/static/css/main.2faaa578.css.map",
-    "main.e9399416.js.map": "/static/js/main.e9399416.js.map"
+    "main.css": "/react-covid19-taiwan-chartjs/static/css/main.2faaa578.css",
+    "main.js": "/react-covid19-taiwan-chartjs/static/js/main.f5b318d2.js",
+    "static/media/image.png": "/react-covid19-taiwan-chartjs/static/media/image.9e5d4fc7428c24bbc17d.png",
+    "index.html": "/react-covid19-taiwan-chartjs/index.html",
+    "main.2faaa578.css.map": "/react-covid19-taiwan-chartjs/static/css/main.2faaa578.css.map",
+    "main.f5b318d2.js.map": "/react-covid19-taiwan-chartjs/static/js/main.f5b318d2.js.map"
   },
   "entrypoints": [
     "static/css/main.2faaa578.css",
-    "static/js/main.e9399416.js"
+    "static/js/main.f5b318d2.js"
   ]
 }
