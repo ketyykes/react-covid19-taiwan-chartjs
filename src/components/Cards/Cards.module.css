@@ -1,0 +1,20 @@
+.container {
+    margin: 50px 0;
+    width: 50%;
+    text-align: center;
+  }
+  .card {
+    margin: 2% 2% !important;
+  }
+  .infected {
+    border-bottom: 10px solid rgba(241,90,34 , 0.5);
+  }
+  @media (max-width: 900px) {
+    .card {
+      margin: 2% 0 !important;
+    }
+    .container{
+      width: 75%;
+    }
+  }
+  

@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React, { useState, useEffect } from "react";
+import { Cards ,DistructPicker,Charts} from "./components";
+//從components底下導入所有components底下整合成一支檔案的index.js
+import styles from "./App.module.css";
+import { fetchData } from "./api";
+import coronaImage from "./images/image.png";
+const App = () => {
+  const { container } = styles;
+  const [data, setData] = useState();
+  const [cities, setCities] = useState("");
+  useEffect(() => {
+    const fetchAPI = async () => {
+      setData(await fetchData());
+    };
+    fetchAPI();
+  }, []);
+  console.log(cities);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={container}>
+      <img className={styles.image} src={coronaImage} alt="COVID-19" />
+      <DistructPicker handleCountryChange={setCities}/>
+      <Cards data={data} cities={cities} />
+      <Charts allData={data} cities={cities} />
     </div>
   );
-}
+};
 
 export default App;
